@@ -3,7 +3,7 @@ In deploying the model serving, several model services can be provided on a sing
 
 Step 1: Installing ModelServer following official tutorial, https://www.tensorflow.org/serving/setup ;
 
-Step 2:convert the checkpoints file to pb file， which comprises the model graph and weight parameters;
+Step 2: Convert the checkpoints file to pb file， which comprises the model graph and weight parameters;
 
 Step 3: Run the file export.py, convert the above pb file to SavedModel which is supported by tensorflow serving;
 
