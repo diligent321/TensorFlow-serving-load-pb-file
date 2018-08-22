@@ -9,8 +9,8 @@ Step 3: Run the file export.py, convert the above pb file to SavedModel which is
 
 Step 4: Run the following command, and start the model server.(here, tmp_scene_pb_SavedModels is supposed to be the directory with SavedModel included.)
         
-        bazel-bin/tensorflow_serving/model_servers/tensorflow_model_server --port=9000 --model_name=mobilenet_v1 --model_base_path=/home/lfyu/official-tf-serving/tmp_scene_pb_SavedModels
+bazel-bin/tensorflow_serving/model_servers/tensorflow_model_server --port=9000 --model_name=mobilenet_v1 --model_base_path=/home/lfyu/official-tf-serving/tmp_scene_pb_SavedModels
         
 Step 5: Run the following command, and start the http serving, which can parse the received bytes and return the class which is predicted by the pb model;
 
-        python do_inference-serving.py
+python do_inference-serving.py
